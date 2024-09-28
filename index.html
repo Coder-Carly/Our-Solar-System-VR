@@ -1,4 +1,5 @@
 
+
 <html> 
     <head>
      <script src = "https://aframe.io/releases/1.3.0/aframe.min.js">
@@ -7,17 +8,51 @@
     </head>
     <body>
 <a-scene background = "color: #ADD8E6">
+    <a-camera position = "0 20 0"></a-camera>
     <a-sky src = "Solarsystem/space.jpeg"></a-sky>
-    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 11111"> 
-        <a-sphere radius = "1" position = "4 0 -5" src = "Solarsystem/mercury.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 4444"></a-sphere>
-        <a-sphere radius = "2" position = "7 0 -7" src = "Solarsystem/venus.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 6666"></a-sphere>
-        <a-sphere radius =  "2.5" position = "12 0 -9" src = "Solarsystem/earth.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 8888"></a-sphere>
-        <a-sphere radius = "1.5" position = "17 0 -11" src = "Solarsystem/mars.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 9999"></a-sphere>
-        <a-sphere radius = "4.5" position = "26 0 -13" src = "Solarsystem/jupiter.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 11111"></a-sphere>
-        <a-sphere radius = "4" position = "36 0 -15" src = "Solarsystem/saturn.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 15555"></a-sphere>
-        <a-sphere radius = "3.5" position = "44 0 -17" src = "Solarsystem/uranus.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 17777"></a-sphere>
-        <a-sphere radius = "3" position = "52 0  -19" src = "Solarsystem/neptune.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+    <a-sphere radius = "5.2" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 4444"> 
+       
     </a-sphere>
-    
-    
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 4444"> 
+        <a-sphere radius = "1" position = "4 0 -5" src = "Solarsystem/mercury.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 4444"></a-sphere> 
+    </a-sphere>
+    <a-torus position="0 0 -25" arc="360" radius="6.5" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 6666"> 
+        <a-sphere radius = "2" position = "7 0 -7" src = "Solarsystem/venus.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 6666"></a-sphere>
+    </a-sphere>
+    <a-torus position="0 0 -25" arc="360" radius="10" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 8888"> 
+        <a-sphere radius =  "2.5" position = "12 0 -9" src = "Solarsystem/earth.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 8888">
+            <a-sphere radius="0.5" position="0.01 0 -9" src="Solarsystem/Moon.jpg" animation="property: rotation; to: 0 360 0; loop: true; dur: 2222"></a-sphere>
+        </a-sphere>
+    </a-sphere>
+    <a-torus position="0 0 -25" arc="360" radius="15" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 9999"> 
+        <a-sphere radius = "1.5" position = "17 0 -11" src = "Solarsystem/mars.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 9999"></a-sphere>
+    </a-sphere>
+    <a-torus position="0 0 -25" arc="360" radius="20" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 11111"> 
+        <a-sphere radius = "4.5" position = "26 0 -13" src = "Solarsystem/jupiter.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 11111"></a-sphere>
+    </a-sphere>
+    <a-torus position="0 0 -25" arc="360" radius="28" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 15555"> 
+        <a-sphere radius = "4" position = "36 0 -15" src = "Solarsystem/saturn.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 15555">
+            
+        </a-sphere>
+        <a-torus position="36 0 -15" arc="360" radius="5" radius-tubular="0.09" rotation="90 0 0" color="orange" > </a-torus>
+        <a-torus position="36 0 -15" arc="360" radius="5.1" radius-tubular="0.09" rotation="90 0 0" color="grey" > </a-torus>
+        <a-torus position="36 0 -15" arc="360" radius="5.2" radius-tubular="0.09" rotation="90 0 0" color="grey" material="color: #ffdfb3" geometry=""> </a-torus>
+    </a-sphere>
+    <a-torus position="0 0 -25" arc="360" radius="39" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 17777"> 
+        <a-sphere radius = "3.5" position = "44 0 -17" src = "Solarsystem/uranus.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 17777"></a-sphere>
+    </a-sphere>
+    <a-torus position="0 0 -25" arc="360" radius="47" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+    <a-sphere radius = "5" position = "0 0 -25" src = "Solarsystem/sun.jpeg" animation  = "property: rotation; to: 0 360 0; loop: true; dur: 20000"> 
+        <a-sphere radius = "3" position = "52 0  -19" src = "Solarsystem/neptune.jpeg" animation = "property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+    </a-sphere>  
+    <a-torus position="0 0 -25" arc="360" radius="55" radius-tubular="0.01" rotation="90 0 0" color="white"></a-torus>
+</a-scene>
+    </body>
 </html>
+
